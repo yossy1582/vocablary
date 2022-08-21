@@ -45,7 +45,7 @@ st.write(question)
 num=3
 st.write(check)
 
-if check != 1:
+if not check:
     for n in range(answer_num):
         if(n < english.shape[0]):
             col1, col2, col3 = st.columns(3)
