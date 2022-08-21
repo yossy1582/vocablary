@@ -17,4 +17,4 @@ st.write(unit)
 
 
 st.sidebar.title("MENU")
-
+st.sidebar.selectbox("UNIT", unit)
