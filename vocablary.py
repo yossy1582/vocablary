@@ -34,7 +34,7 @@ japanese = data['Japanese']
 
 
 num=3
-col= st.beta_columns(num)
+col= st.columns(num)
 for n in range(answer_num):
     for lst in list(range(0,num,1)):
         if check:
