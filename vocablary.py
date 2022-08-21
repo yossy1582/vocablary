@@ -34,9 +34,9 @@ japanese = data['Japanese']
 st.write(english)
 
 num=3
-col1, col2, col3 = st.columns(3)
 
 for n in range(answer_num):
+    col1, col2, col3 = st.columns(3)
 
     with col1:
         st.write(english[n])
