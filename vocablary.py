@@ -23,4 +23,4 @@ unit = st.sidebar.selectbox("UNIT", unit_list)
 part = st.sidebar.selectbox("Part", part_list)
 level = st.sidebar.multiselect("Level", level_list)
 
-mode = st.sidebar.radio('mode', ('random', 'sequential', 'reverse'))
+mode = st.sidebar.radio('mode', ('sequential', 'random', 'reverse'))
