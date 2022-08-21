@@ -36,30 +36,15 @@ st.write(english.shape[0])
 num=3
 
 for n in range(answer_num):
-    col1, col2, col3 = st.columns(3)
+    if(n < english.shape[0]):
+        col1, col2, col3 = st.columns(3)
 
-    with col1:
-        st.text_input('japanese ' + str(n), japanese[n])
-    with col2:
-        j = st.text_input('eglish ' + str(n))
-    with col3:
-        st.write("eee")
-
-
-
-
-# col= st.columns(num)
-# for n in range(answer_num):
-#     for lst in list(range(0,num,1)):
-#         if check:
-#             with col[lst]:
-#                 st.write(japanese[n])
-#                 st.text_input(" ")
-#         else:
-#             with col[lst]:
-#                 st.write(english[n])
-#                 st.text_input(" ")
-#                 st.write(" ")
+        with col1:
+            st.text_input('japanese ' + str(n), japanese[n])
+        with col2:
+            j = st.text_input('eglish ' + str(n))
+        with col3:
+            st.write("eee")
 
 
 
