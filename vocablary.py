@@ -35,24 +35,18 @@ st.write(english)
 
 num=3
 
-# for n in range(answer_num):
-col1, col2, col3 = st.columns(3)
+for n in range(answer_num):
+    col1, col2, col3 = st.columns(3)
 
-with col1:
-    st.write(english[0])
-with col2:
-    j = st.text_input('eglish')
-with col3:
-    st.write("eee")
+    with col1:
+        st.text_input('japanese ' + n, data['Japanese'])
+    with col2:
+        j = st.text_input('eglish ' + n)
+    with col3:
+        st.write("eee")
 
-col1, col2, col3 = st.columns(3)
 
-with col1:
-    st.write(english[1])
-with col2:
-    j2 = st.text_input('eglish'+'1')
-with col3:
-    st.write("eee")
+
 
 # col= st.columns(num)
 # for n in range(answer_num):
