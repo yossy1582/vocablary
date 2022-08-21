@@ -15,17 +15,23 @@ data = pd.read_csv("./data/vocablaries.csv", encoding='shift_jis', index_col=Non
 # st.dataframe(data.head())
 
 unit_list = data['UNIT'].unique()
-part_list = data['Part'].unique()
+# part_list = data['Part'].unique()
 # st.write(unit)
 level_list = (0,1,2,3,4,5)
 
 
+
+#############################################
 st.sidebar.title("MENU")
 unit = st.sidebar.selectbox("UNIT", unit_list)
+part_list = data[data['UNIT'] == unit]
 part = st.sidebar.selectbox("Part", part_list)
 level = st.sidebar.multiselect("Level", level_list)
 
 mode = st.sidebar.radio('mode', ('sequential', 'random', 'reverse'))
+#############################################
+
+
 
 
 question = data[(data['UNIT'] == unit) & (data['Part'] == part)]
