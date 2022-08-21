@@ -31,7 +31,7 @@ mode = st.sidebar.radio('mode', ('sequential', 'random', 'reverse'))
 english  = data['English']
 japanese = data['Japanese']
 
-st.write(english)
+st.write(english.shape[0])
 
 num=3
 
