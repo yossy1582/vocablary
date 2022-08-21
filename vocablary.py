@@ -37,8 +37,8 @@ mode = st.sidebar.radio('mode', ('sequential', 'random', 'reverse'))
 
 
 question = data[(data['UNIT'] == unit) & (data['Part'] == part)]
-english  = question['English']
-japanese = question['Japanese']
+english  = np.array(question['English'])
+japanese = np.array(question['Japanese'])
 
 st.write(question)
 st.write(english.shape[0])
@@ -53,7 +53,7 @@ if not check:
             col1, col2, col3 = st.columns(3)
 
             with col1:
-                st.text_input('japanese ' + str(n), japanese.loc(n))
+                st.text_input('japanese ' + str(n), japanese[n])
             with col2:
                 j = st.text_input('english ' + str(n))
             with col3:
