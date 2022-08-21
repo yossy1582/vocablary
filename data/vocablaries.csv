@@ -1,3 +1,5 @@
 UNIT,Part,Level,English,Japanese,#try,#correct
 1,1,0,Japan,日本,0,0
-1,1,0,America,アメリカ,0,0
+1,2,0,America,アメリカ,0,0
+2,1,0,doughter,娘,0,0
+2,2,0,sun,息子,0,0
