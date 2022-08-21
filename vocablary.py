@@ -36,7 +36,7 @@ st.write(english)
 num=3
 col1, col2, col3 = st.columns(3)
 
-for n in range(num):
+for n in range(answer_num):
 
     with col1:
         st.write(english[n])
