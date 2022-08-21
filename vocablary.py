@@ -25,6 +25,7 @@ level_list = (0,1,2,3,4,5)
 st.sidebar.title("MENU")
 unit = st.sidebar.selectbox("UNIT", unit_list)
 part_list = data[data['UNIT'] == unit].unique()
+st.write(part_list)
 
 part = st.sidebar.selectbox("Part", part_list)
 level = st.sidebar.multiselect("Level", level_list)
