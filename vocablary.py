@@ -50,7 +50,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.write(english[1])
 with col2:
-    j = st.text_input('eglish')
+    j2 = st.text_input('eglish'+'1')
 with col3:
     st.write("eee")
 
