@@ -43,7 +43,7 @@ for n in range(num):
     with col2:
         st.text_input(" ")
     with col3:
-        st.text_input(" ")
+        st.write(" ")
 
 
 # col= st.columns(num)
