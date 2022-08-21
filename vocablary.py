@@ -39,9 +39,9 @@ for n in range(answer_num):
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.text_input('japanese ' + n, data['Japanese'])
+        st.text_input('japanese ' + str(n), data['Japanese'])
     with col2:
-        j = st.text_input('eglish ' + n)
+        j = st.text_input('eglish ' + str(n))
     with col3:
         st.write("eee")
 
