@@ -28,10 +28,11 @@ level = st.sidebar.multiselect("Level", level_list)
 mode = st.sidebar.radio('mode', ('sequential', 'random', 'reverse'))
 
 
-english  = data['English']
-japanese = data['Japanese']
+question = data[(data['UNIT'] == unit) & (data['Part'] == part)]
+english  = question['English']
+japanese = question['Japanese']
 
-st.write(english.shape[0])
+st.write(english)
 
 num=3
 
