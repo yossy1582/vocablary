@@ -10,7 +10,11 @@ pwd = os.getcwd()
 st.title("VOCABLARIES CARD " + pwd)
 
 data = pd.read_csv("./data/vocablaries.csv", encoding='shift_jis')
-st.dataframe(data.head())
+# st.dataframe(data.head())
+
+unit = np.array(data['UNIT'])
+st.write(unit)
+
 
 st.sidebar.title("MENU")
 
