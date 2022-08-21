@@ -41,9 +41,9 @@ for n in range(answer_num):
     with col1:
         st.write(english[n])
     with col2:
-        st.text_input(" ")
+        st.text_input("ddd")
     with col3:
-        st.write(" ")
+        st.write("eee")
 
 
 # col= st.columns(num)
