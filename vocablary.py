@@ -42,6 +42,7 @@ japanese = question['Japanese']
 
 st.write(question)
 st.write(english.shape[0])
+st.write(english)
 
 num=3
 
