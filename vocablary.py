@@ -40,7 +40,7 @@ question = data[(data['UNIT'] == unit) & (data['Part'] == part)]
 english  = question['English']
 japanese = question['Japanese']
 
-st.write(english)
+st.write(question)
 
 num=3
 
