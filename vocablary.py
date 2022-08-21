@@ -5,7 +5,9 @@ import streamlit as st
 import os, sys
  
 
+answer_num = 10
 
+check = False
 pwd = os.getcwd()
 st.title("VOCABLARIES CARD ")
 
@@ -24,3 +26,27 @@ part = st.sidebar.selectbox("Part", part_list)
 level = st.sidebar.multiselect("Level", level_list)
 
 mode = st.sidebar.radio('mode', ('sequential', 'random', 'reverse'))
+
+
+english  = data['English']
+japanese = data['Japanese']
+
+
+
+num=3
+col= st.beta_columns(num)
+for n in range(answer_num):
+    for lst in list(range(0,num,1)):
+        if check:
+            with col[lst]:
+                st.write(english[n])
+                st.text_input()
+        else:
+            with col[lst]:
+                st.write(japanese[n])
+                st.text_input()
+
+
+
+check = st.button("check")
+
