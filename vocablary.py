@@ -8,5 +8,5 @@ import streamlit as st
 
 st.title("VOCABLARIES CARD")
 
-
+st.sidebar.title("MENU")
 
