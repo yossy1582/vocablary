@@ -41,9 +41,10 @@ english  = question['English']
 japanese = question['Japanese']
 
 st.write(question)
+st.write(english)
+st.write(japanese)
 
 num=3
-st.write(check)
 
 if not check:
     for n in range(answer_num):
