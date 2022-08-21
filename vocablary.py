@@ -9,7 +9,7 @@ import os, sys
 pwd = os.getcwd()
 st.title("VOCABLARIES CARD " + pwd)
 
-data = pd.read_csv("bocablaries.csv")
+data = pd.read_csv("vocablaries.csv")
 # data = pd.read_csv("/app/vocablary/data/bocablaries.csv")
 st.dataframe(data)
 
