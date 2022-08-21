@@ -53,7 +53,7 @@ if not check:
             col1, col2, col3 = st.columns(3)
 
             with col1:
-                st.text_input('japanese ' + str(n), japanese[n])
+                st.text_input('japanese ' + str(n), japanese.loc(n))
             with col2:
                 j = st.text_input('english ' + str(n))
             with col3:
