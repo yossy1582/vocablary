@@ -43,6 +43,7 @@ japanese = question['Japanese']
 st.write(question)
 
 num=3
+st.write(check)
 
 if check != 1:
     for n in range(answer_num):
@@ -52,7 +53,7 @@ if check != 1:
             with col1:
                 st.text_input('japanese ' + str(n), japanese[n])
             with col2:
-                j = st.text_input('eglish ' + str(n))
+                j = st.text_input('english ' + str(n))
             with col3:
                 st.write("eee")
 
