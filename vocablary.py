@@ -40,11 +40,10 @@ question = data[(data['UNIT'] == unit) & (data['Part'] == part)]
 english  = np.array(question['English'])
 japanese = np.array(question['Japanese'])
 
-st.write(question)
-st.write(english.shape[0])
-st.write(english)
+# st.write(question)
+# st.write(english.shape[0])
+# st.write(english)
 
-num=3
 
 if not check: 
     for n in range(answer_num):
