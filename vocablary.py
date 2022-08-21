@@ -12,7 +12,7 @@ st.title("VOCABLARIES CARD " + pwd)
 data = pd.read_csv("./data/vocablaries.csv", encoding='shift_jis', index_col=None)
 # st.dataframe(data.head())
 
-unit = data['UNIT'].values
+unit = data['UNIT']
 st.write(unit)
 
 
