@@ -9,7 +9,7 @@ import os, sys
 pwd = os.getcwd()
 st.title("VOCABLARIES CARD " + pwd)
 
-data = pd.read_csv("/app/vocablary/data/vocablaries.csv")
+data = pd.read_csv("/app/vocablary/data/bocablaries.csv")
 st.dataframe(data)
 
 st.sidebar.title("MENU")
