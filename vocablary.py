@@ -12,9 +12,11 @@ st.title("VOCABLARIES CARD " + pwd)
 data = pd.read_csv("./data/vocablaries.csv", encoding='shift_jis', index_col=None)
 # st.dataframe(data.head())
 
-unit = data['UNIT'].unique()
-st.write(unit)
+unit_list = data['UNIT'].unique()
+part_list = data['Part'].unique()
+# st.write(unit)
 
 
 st.sidebar.title("MENU")
-st.sidebar.selectbox("UNIT", unit)
+unit = st.sidebar.selectbox("UNIT", unit_list)
+part = st.sidebar.selectbox("Part", part_list)
