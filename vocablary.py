@@ -48,6 +48,7 @@ japanese = np.array(question['Japanese'])
 if not check: 
     for n in range(answer_num):
         if(n < english.shape[0]):
+            st.markdown("## Q" + str(n))
             col1, col2, col3 = st.columns(3)
 
             with col1:
