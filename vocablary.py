@@ -39,12 +39,13 @@ for n in range(answer_num):
     for lst in list(range(0,num,1)):
         if check:
             with col[lst]:
-                st.write(english[n])
+                st.write(japanese[n])
                 st.text_input("")
         else:
             with col[lst]:
-                st.write(japanese[n])
+                st.write(english[n])
                 st.text_input("")
+                st.write("")
 
 
 
