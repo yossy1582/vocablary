@@ -40,11 +40,11 @@ for n in range(answer_num):
         if check:
             with col[lst]:
                 st.write(english[n])
-                st.text_input()
+                st.text_input("")
         else:
             with col[lst]:
                 st.write(japanese[n])
-                st.text_input()
+                st.text_input("")
 
 
 
