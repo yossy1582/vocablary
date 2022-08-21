@@ -41,7 +41,7 @@ for n in range(answer_num):
     with col1:
         st.write(english[n])
     with col2:
-        j = st.text_input(n)
+        j = st.text_input('ddd')
     with col3:
         st.write("eee")
 
