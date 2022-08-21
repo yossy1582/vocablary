@@ -7,7 +7,7 @@ import os, sys
 
 
 pwd = os.getcwd()
-st.title("VOCABLARIES CARD " + pwd)
+st.title("VOCABLARIES CARD ")
 
 data = pd.read_csv("./data/vocablaries.csv", encoding='shift_jis', index_col=None)
 # st.dataframe(data.head())
@@ -22,3 +22,5 @@ st.sidebar.title("MENU")
 unit = st.sidebar.selectbox("UNIT", unit_list)
 part = st.sidebar.selectbox("Part", part_list)
 level = st.sidebar.multiselect("Level", level_list)
+
+mode = st.sidebar.radio('mode', ('random', 'sequential', 'reverse'))
